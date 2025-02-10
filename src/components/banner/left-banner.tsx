@@ -72,7 +72,7 @@ export const LeftBanner = () => {
   })
   
   return (
-    <div className="w-full lg:flex-1 flex flex-col gap-20" 
+    <div className="w-full pr-5 pl-5 lg:pl-0 lg:pr-0 lg:flex-1 flex flex-col gap-20" 
       // data-aos="fade-right"
       >
       <div className="flex flex-col gap-3 mdl:gap-5" 

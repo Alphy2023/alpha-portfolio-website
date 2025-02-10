@@ -28,3 +28,14 @@ export const getGreeting = () =>{
   }
   return greeting;
 }
+
+export const shortenText = (text?: string)=> {
+  if (!text) return ""; // Return an empty string if text is undefined or null
+
+  const maxLength = 60; // Set the maximum length of the shortened text
+  if (text.length <= maxLength) {
+    return text; // Return the original text if it's already shorter than the maximum length
+  }
+
+  return text.substring(0, maxLength - 3) + "..."; // Shorten the text and add an ellipsis
+};

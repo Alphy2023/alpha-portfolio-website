@@ -30,5 +30,15 @@ export type AboutMe = {
     name?: string;
     qualities?: Quality[];
     resumeSummary?:string;
+    aboutExcerpt?:string;
 };
-
+export type ServiceItem = {
+    name?:string;
+}
+export type Service = {
+    title:string;
+    icon?:string | JSX.Element;
+    description:string;
+    serviceDesc:string;
+    services:ServiceItem[]
+}
