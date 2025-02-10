@@ -15,7 +15,7 @@ import { FaLaravel } from "react-icons/fa";
 import {TooltipWrapper} from "@/components/tooltip-wrapper"
 
 export const LeftBanner = () => {
-  const [words,setWords] = useState<[string]>([])
+  const [words, setWords] = useState<string[]>([]);
 
   const bestSkills:BestSkill[] = [
     {
@@ -50,7 +50,7 @@ export const LeftBanner = () => {
   
   const handleWordsUpdate = useCallback(
     () => {
-      const items =[];
+      const items: string[] = [];
       aboutMeData?.qualities?.forEach(item=>{
         items.push(item?.title)
       })
@@ -91,7 +91,7 @@ export const LeftBanner = () => {
         </h1>
         <h2 className="text-md md:text-3xl font-bold text-white">
           a <span className="text-primaryColor">{text}</span>
-          <Cursor cursorBlinking="false" cursorStyle="" cursorColor="#149ddd" />
+          <Cursor cursorBlinking={false} cursorStyle="" cursorColor="#149ddd" />
         </h2>
         <p
           className="text-sm md:text-base font-bodyFont text-justify
