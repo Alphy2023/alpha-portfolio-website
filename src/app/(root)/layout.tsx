@@ -11,16 +11,16 @@ interface MainLayoutProps{
 const MainLayout = ({children}:MainLayoutProps) => {
     return (
         
-        <TooltipProvider>
-            <div className="w-full h-screen bg-bodyColor
-            text-lightText px-2 ">
+        <div className="w-full h-screen bg-bodyColor
+        text-lightText px-2 ">
+                <TooltipProvider>
                     <MainNavbar/>
                     <div className="max-w-screen-xl mx-auto">
                         {children}
                     </div>
                     <MainFooter/>
+                </TooltipProvider>
             </div>
-        </TooltipProvider>
     )
 }
 
