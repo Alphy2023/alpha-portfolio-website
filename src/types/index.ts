@@ -42,3 +42,18 @@ export type Service = {
     serviceDesc:string;
     services:ServiceItem[]
 }
+// =============== project types =============
+export type ProjectImage = {
+    url:string;
+}
+export type Project = {
+    title?:string;
+    site_link?:string;
+    company?:string;
+    start_date?:string;
+    end_date?:string;
+    project_medium?:string;
+    project_images?:ProjectImage[];
+    excerpt:string;
+
+}

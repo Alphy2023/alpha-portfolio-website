@@ -1,4 +1,4 @@
-import {MainNavLink, AboutMe,Service} from "@/types"
+import {MainNavLink, AboutMe,Service,Project} from "@/types"
 
 
 // =========== main menu links =================
@@ -144,4 +144,42 @@ export const servicesData: Service[] = [
         },
         ],
     },
+]
+// ============== projects =============
+export const projectsData:Project[] = [
+    {
+      title: "Wendo Store - E-commerce Website",
+        //   github_link: "https://github.com/Alphy2023/ecommerce-website",
+      site_link: "https://wendostore.vercel.app",
+      company: "Wendo Store",
+      start_date: "03 Feb, 2022",
+      end_date: "24 Dec, 2022",
+      project_medium: "personal",
+      project_images: [
+        {
+          url: "",
+        },
+      ],
+      excerpt: `Experience the ultimate online shopping destination with Wendo Store, an e-commerce website that offers a vast selection of products, convenient sales, and easy order placement. The secure online marketplace allows customers and sellers to interact and exchange goods and services with ease. It prioritizes modern web development and cutting-edge features, such as modern payment mechanisms, to provide a seamless shopping experience. Developed with React, Tailwind CSS, Redux, Node.js, Express, and MongoDB, the site guarantees optimal performance and reliability. Hosted on the trusted Vercel app platform, it ensures quality products and exceptional service with every order.`,
+    },
+    {
+      title: "AlphyFlix - Movies and Series Website",
+        //   github_link: "https://github.com/Alphy2023/alphaflix",
+      site_link: "https://alphyflix.vercel.app/",
+      company: "Personal",
+      start_date: "10 Jan, 2023",
+      end_date: "14 July, 2023",
+      project_medium: "personal",
+      project_images: [
+        {
+          url: "",
+        },
+      ],
+      excerpt: `Welcome to AlphyFlix, the ultimate destination for online movies and series! 
+      The platform offers a sophisticated user experience and cutting-edge technologies to enhance your viewing pleasure. 
+      The website is designed using modern technologies, including React, Material UI, 
+      and Redux for frontend development, and Nodejs, Express, TMDB, REST API, and 
+      MongoDB for backend and database management.
+       Hosted on the reliable Vercel app platform, AlphyFlix ensures minimal buffering and downtime. Enjoy the show!`,
+    }
 ]
