@@ -1,5 +1,8 @@
 import {MainNavLink, AboutMe,Service,Project} from "@/types"
-
+import { alphaflixImgOne,
+    alphaflixImgTwo,
+    alphaflixImgThree,
+    alphaflixImgFour} from "@/assets"
 
 // =========== main menu links =================
 export const mainNavLinks:MainNavLink[] = [
@@ -172,7 +175,16 @@ export const projectsData:Project[] = [
       project_medium: "personal",
       project_images: [
         {
-          url: "",
+          url: alphaflixImgOne,
+        },
+        {
+          url: alphaflixImgTwo,
+        },
+        {
+          url: alphaflixImgThree,
+        },
+        {
+          url: alphaflixImgFour,
         },
       ],
       excerpt: `Welcome to AlphyFlix, the ultimate destination for online movies and series! 

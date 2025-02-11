@@ -3,8 +3,11 @@ import Image from "next/image"
 import React from 'react'
 import {Project} from "@/types"
 import { FaGlobe } from "react-icons/fa";
+import {CarouselWrapper} from "@/components/carousel-wrapper"
 
-
+import {
+    CarouselItem,
+  } from "@/components/ui/carousel"
 interface ProjectItemProps {
     item?:Project | null;
 }
@@ -23,12 +26,26 @@ export const ProjectItem = ({item}:ProjectItemProps) => {
             md:justify-start lg:justify-center"
             data-aos="zoom-in"
         >
+             {/* <Image
+                    src={item?.project_images 
+                        && item?.project_images[0]?.url || ""}
+                    alt=""
+                    className="h-72 md:h-32 lg:h-72 rounded-lg object-cover"
+                    /> */}
+            <CarouselWrapper>
+            {item?.project_images?.map((item,idx)=>(
+                
+                <CarouselItem key={idx}>
+                    <Image
+                    src={item?.url}
+                    alt=""
+                    className="h-72 md:h-32 lg:h-72 rounded-lg object-cover"
+                    />
+                </CarouselItem>
+            ))}
+              
+            </CarouselWrapper>
             {/* <ImageSlide data={item?.project_images} /> */}
-            <Image
-            src={item?.project_images && item?.project_images[0]?.url || ""}
-            alt=""
-            className="h-72 md:h-32 lg:h-72 rounded-lg object-cover"
-            />
             <div className="w-full flex flex-col justify-end">
             <p
                 className="text-xs uppercase text-designColor
