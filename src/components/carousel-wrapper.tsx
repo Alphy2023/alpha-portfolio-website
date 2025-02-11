@@ -1,13 +1,9 @@
 
 import Autoplay from "embla-carousel-autoplay"
 import { useRef, ReactNode } from "react";
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
-//   CarouselNext,
-//   CarouselPrevious,
 } from "@/components/ui/carousel"
 
 
@@ -29,15 +25,13 @@ export const CarouselWrapper =({
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-xs"
+      className={className}
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
           {children}
       </CarouselContent>
-      {/* <CarouselPrevious /> */}
-      {/* <CarouselNext /> */}
     </Carousel>
   )
 }
