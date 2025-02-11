@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 
 export type MainNavLink = {
     title:string;
@@ -44,7 +45,7 @@ export type Service = {
 }
 // =============== project types =============
 export type ProjectImage = {
-    url:string;
+    url: string | StaticImageData;
 }
 export type Project = {
     title?:string;
