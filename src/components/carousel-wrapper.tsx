@@ -16,10 +16,10 @@ interface CarouselWrapperProps {
 
 export const CarouselWrapper =({
     children,
-    autoplayDelay = 4000,
+    autoplayDelay = 2000,
     className = "w-full max-w-xs"}:CarouselWrapperProps)=> {
     const plugin = useRef<ReturnType<typeof Autoplay>>(
-        Autoplay({ delay: autoplayDelay, stopOnInteraction: true })
+        Autoplay({ delay: autoplayDelay, stopOnInteraction: false })
         );
 
   return (

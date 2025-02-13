@@ -89,7 +89,15 @@ body {
   .active{
     @apply text-[#149ddd];
   
-}
+  }
+  .resumeLi{
+    @apply w-full h-10 bg-black bg-opacity-25 text-xl text-gray-300 flex 
+    justify-center cursor-pointer items-center hover:bg-opacity-40
+     duration-300 border-[1px] rounded-none
+  }
+  .bgOpacity{
+      @apply bg-black bg-opacity-40
+  }
 }
 
 /* =============preloader ============== */

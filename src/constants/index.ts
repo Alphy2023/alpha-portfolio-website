@@ -1,4 +1,5 @@
-import {MainNavLink, AboutMe,Service,Project} from "@/types"
+import {MainNavLink, AboutMe,Service,Project,
+    Resume} from "@/types"
 import { alphaflixImgOne,
     alphaflixImgTwo,
     alphaflixImgThree,
@@ -195,3 +196,118 @@ export const projectsData:Project[] = [
        Hosted on the reliable Vercel app platform, AlphyFlix ensures minimal buffering and downtime. Enjoy the show!`,
     }
 ]
+
+// ============= resume ===============
+
+
+export const resumeData: Resume = {
+    education: {
+      background: [
+        {
+          _id: 1,
+          course: "Bs. Information Communication Technology",
+          grade: "First class honors",
+          school: "Scott Christian University",
+          location: "Machakos",
+          start_date: "2017",
+          end_date: "2021",
+          description:
+            "The course is provided by the university to prepare students for job market experience and to be relevant with the modern IT technologies.",
+        },
+      ],
+      certifications: [
+        {
+          _id: 1,
+          course: "Computer Packages",
+          grade: "Distinction",
+          school: "The Great Bridge College",
+          location: "Buruburu, Nairobi",
+          start_date: "Jan 2017",
+          end_date: "Mar 2017",
+          description:
+            "The training is provided by the college for basic computer skills, and certification is granted at the end.",
+        },
+      ],
+    },
+    experience: {
+      jobs: [
+        {
+          _id: 1,
+          role: "Intern (Risk Profiling Unit)",
+          company: "Kenya Revenue Authority (KRA)",
+          start_date: "Jan 2022",
+          end_date: "Dec 2022",
+          description:
+            "The KRA was established to collect revenue on behalf of the government and oversee tax-related operations.",
+          duties: [
+            { title: "Collecting, analyzing, and documenting business user requirements." },
+            { title: "Oracle and PostgreSQL database and schema design and development." },
+            { title: "Developing, documenting, deploying, and maintaining workflow and report systems." },
+            { title: "Assurance of system functionality and quality." },
+          ],
+          location: "Times Tower, Nairobi",
+        },
+        {
+          _id: 2,
+          role: "ICT Intern",
+          company: "Machakos Law Courts",
+          start_date: "July 2021",
+          end_date: "Oct 2021",
+          description: "Machakos Law Courts is a judicial magistrate court in Machakos Town.",
+          duties: [
+            { title: "Configuration, setup, troubleshooting, and maintenance of networks, routers, and Wi-Fi." },
+            { title: "Installation, diagnosis, and repair of hardware and software." },
+          ],
+          location: "Machakos",
+        },
+      ],
+      trainer: [
+        {
+          _id: 1,
+          role: "Tutoring (Computer Packages)",
+          company: "Self Employed",
+          start_date: "Sep 2021",
+          end_date: "Dec 2021",
+          location: "Nairobi",
+          description: "I offered basic computer skills and trained students on software development technologies.",
+          duties: [
+            { title: "Tutor students on basic computer skills (computer packages)." },
+            { title: "Offer software development skills and methodologies." },
+          ],
+        },
+      ],
+    },
+    achievement: {
+      company: [
+        {
+          _id: 1,
+          title: "Intern (Risk Profiling Unit)",
+          company: "Kenya Revenue Authority (KRA)",
+          start_date: "Jan 2022",
+          end_date: "Dec 2022",
+          location: "Times Tower, Nairobi",
+          description: "Having served as an intern at KRA, I obtained several achievements.",
+          achievements: [
+            { title: "Developed 4 workflow systems, increasing performance index by 70%." },
+            { title: "Developed and maintained case monitoring and reporting systems." },
+          ],
+        },
+      ],
+      trainer: [
+        {
+          _id: 1,
+          title: "Tutoring (Computer Packages)",
+          company: "Self Employed",
+          start_date: "Sep 2021",
+          end_date: "Dec 2021",
+          location: "Nairobi",
+          description: "Having offered basic computer skills, I obtained several achievements.",
+          duties: [
+            { title: "Offer basic computer skills." },
+            { title: "Tutor on software development technologies and methods." },
+          ],
+        },
+      ],
+    },
+  };
+// ============= resume ends ===============

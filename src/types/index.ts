@@ -58,3 +58,62 @@ export type Project = {
     excerpt:string;
 
 }
+//  ============= resume types ============
+export type EducationBackground = {
+    _id?: number | string;
+    course?: string;
+    grade?: string;
+    school?: string;
+    location?: string;
+    start_date?: string;
+    end_date?: string;
+    description?: string;
+}
+  
+
+  
+export type Duty = {
+    title?: string;
+}
+  
+export type JobExperience = {
+    _id?: number | string;
+    role?: string;
+    title?: string;
+    company?: string;
+    start_date?: string;
+    end_date?: string;
+    description?: string;
+    duties?: Duty[];
+    location?: string;
+}
+  
+export type Experience = {
+    jobs?: JobExperience[];
+    trainer?: JobExperience[];
+}
+
+export type Achievement = {
+    _id?: number | string;
+    title?: string;
+    company?: string;
+    start_date?: string;
+    end_date?: string;
+    description?: string;
+    achievements?: Duty[];
+    location?: string;
+}
+export type Resume = {
+    experience: {
+        jobs: JobExperience[];
+        trainer: JobExperience[];
+    };
+    education: {
+        background: EducationBackground[];
+        certifications: EducationBackground[];
+    };
+    achievement: {
+        company: Achievement[];
+        trainer: JobExperience[];
+    };
+}
