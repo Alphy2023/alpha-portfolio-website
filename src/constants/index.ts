@@ -302,7 +302,7 @@ export const resumeData: Resume = {
           end_date: "Dec 2021",
           location: "Nairobi",
           description: "Having offered basic computer skills, I obtained several achievements.",
-          duties: [
+          achievements: [
             { title: "Offer basic computer skills." },
             { title: "Tutor on software development technologies and methods." },
           ],
