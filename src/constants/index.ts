@@ -309,5 +309,33 @@ export const resumeData: Resume = {
         },
       ],
     },
+    skills: {
+      designSkills: [
+        { name: "Figma", proficiency: "100%" },
+        { name: "Photoshop", proficiency: "100%" },
+        { name: "Adobe Illustrator", proficiency: "98%" },
+        { name: "Adobe InDesign", proficiency: "98%" },
+        { name: "Material UI", proficiency: "100%" },
+        { name: "Shadcn UI", proficiency: "100%" },
+        { name: "Ant design UI", proficiency: "100%" },
+      ],
+      developmentSkills: [
+        { name: "NextJs", proficiency: "100%" },
+        { name: "React", proficiency: "100%" },
+        { name: "Typescript", proficiency: "100%" },
+        { name: "WebRTC", proficiency: "100%" },
+        { name: "Laravel", proficiency: "100%" },
+        { name: "Tailwind CSS", proficiency: "98%" },
+        { name: "CSS/SCSS", proficiency: "100%" },
+      ],
+      managerialSkills: [
+        { name: "Excellent problem solving", proficiency: "100%" },
+        { name: "Effective time management", proficiency: "100%" },
+        { name: "Team player", proficiency: "100%" },
+        { name: "Excellent analytical skills", proficiency: "100%" },
+        { name: "Interpersonal skills", proficiency: "100%" },
+        { name: "Proficient communicator", proficiency: "98%" },
+      ]
+    }
   };
 // ============= resume ends ===============

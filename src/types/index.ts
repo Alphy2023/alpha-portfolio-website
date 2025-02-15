@@ -103,6 +103,10 @@ export type Achievement = {
     achievements?: Duty[];
     location?: string;
 }
+export type Skill = {
+    name: string;
+    proficiency: string;
+  };
 export type Resume = {
     experience: {
         jobs: JobExperience[];
@@ -116,4 +120,9 @@ export type Resume = {
         company: Achievement[];
         trainer: JobExperience[];
     };
+    skills: {
+        designSkills:Skill[],
+        developmentSkills:Skill[],
+        managerialSkills:Skill[]
+    }
 }
