@@ -31,7 +31,7 @@ const SkillBar= ({ name, proficiency}:Skill) => {
 
 const SkillsSection: React.FC<{ title: string; skills: Skill[] }> = ({ title, skills }) => {
   return (
-    <div className="w-full lg:w-1/2">
+    <div className="w-full ">
       <ResumeTitle title="Features" subTitle={title} />
       <div className="mt-8 w-full flex flex-col gap-4">
         {skills?.map((skill, index) => (
@@ -49,7 +49,7 @@ export const SkillsContent = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 0.9 } }}
-        className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 lgl:gap-20 w-full"
+        className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 lgl:gap-10 w-full"
       >
         <SkillsSection title="Design Skills" skills={resumeData?.skills?.designSkills} />
         <SkillsSection title="Development Skills" skills={resumeData?.skills?.developmentSkills} />
